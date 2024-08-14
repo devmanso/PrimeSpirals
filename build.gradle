@@ -2,8 +2,16 @@ plugins {
     id 'java'
 }
 
-group = 'org.example'
-version = '1.0-SNAPSHOT'
+group = 'org.spiral'
+version = '1.0'
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'org.spiral.Main'
+        )
+    }
+}
 
 repositories {
     mavenCentral()
